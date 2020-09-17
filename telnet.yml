@@ -1,14 +1,17 @@
 ---
 
-- name: Check all port numbers are accessible from current host
-  wait_for:
-    hosts: all
-    port: "{{ item }}"
-    state: started         # Port should be open
-    delay: 0               # No wait before first check (sec)
-    timeout: 3             # Stop checking after timeout (sec)
-  ignore_errors: yes
-  with_items:
-    - 443
-    - 80
-    - 80443
+- name: show version
+  hosts: telnet
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: telnet sw
+      telnet:
+      user: don
+      password: DevTest1231
+      login_prompt: "Username: "
+      prompts:
+        - '[>|#]'
+      command:
+        - terminal length 0
+        - show version
