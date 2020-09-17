@@ -7,8 +7,8 @@
   tasks:
    - name: telnet sw
      telnet:
-      user: don
-      password: DevTest1231
+      user: 
+      password: 
       login_prompt: "Username: "
       prompts:
        - '[>|#]'
