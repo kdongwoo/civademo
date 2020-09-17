@@ -6,7 +6,7 @@
   tasks:
    - name: run show commands
      telnet:
-      host: localhost
+      host: 104.210.86.211
       user: don
       password: DevAdmin123!
       login_prompt: "Username: "
