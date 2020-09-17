@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: 104.210.86.211
   connection: local
   gather_facts: false
 
