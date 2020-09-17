@@ -10,5 +10,3 @@
         login_prompt: "Username: "
         prompts:
          - "[>#]"        
-        command:
-         - ifconfig
