@@ -1,14 +1,17 @@
+---
 - hosts: localhost
+  gather_facts: true
   connection: local
-  gather_facts: false
 
   tasks:
-    - name: my first telnet task
-      telnet:
-        username: don
-        password: DevAdmin123!
-        login_prompt: "Username: "
-        prompts:
-         - "[>#]"        
-        command:
-         - hostname
+   - name: run show commands
+     telnet:
+      user: don
+      password: DevAdmin123!
+      login_prompt: "Username: "
+      prompts:
+       - "[>#]"
+      commands:
+       - terminal length 0
+       - show version
+     register: output
