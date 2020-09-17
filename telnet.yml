@@ -1,7 +1,7 @@
 ---
 
 - name: show version
-  hosts: 104.210.86.211
+  hosts: telnet
   gather_facts: false
   connection: local
   tasks:
