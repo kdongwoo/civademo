@@ -5,13 +5,13 @@
   gather_facts: false
   connection: local
   tasks:
-    - name: telnet sw
-      telnet:
+   - name: telnet sw
+     telnet:
       user: don
       password: DevTest1231
       login_prompt: "Username: "
       prompts:
-        - '[>|#]'
+       - '[>|#]'
       command:
-        - terminal length 0
-        - show version
+       - terminal length 0
+       - show version
