@@ -6,9 +6,9 @@
   tasks:
    - name: run show commands
      telnet:
-      host: 104.210.86.211
-      user: don
-      password: DevAdmin123!
+      host: localhost
+      user: test
+      password: test
       login_prompt: "Username: "
       prompts:
        - "[>#]"
