@@ -1,17 +1,10 @@
----
-
-- name: show version
-  hosts: telnet
-  gather_facts: false
-  connection: local
-  tasks:
-   - name: telnet sw
-     telnet:
-      user: 
-      password: 
-      login_prompt: "Username: "
-      prompts:
-       - '[>|#]'
-      command:
-       - terminal length 0
-       - show version
+- name: run show commands
+  telnet:
+    user: don
+    password: DevAdmin123!
+    login_prompt: "Username: "
+    prompts:
+      - "[>#]"
+    command:
+      - terminal length 0
+      - show version
