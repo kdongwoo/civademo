@@ -2,7 +2,7 @@
 - name: Validate Telnet accessibility
   gather_facts: false
   connection: local
-  hosts: all
+  hosts: sydonVm
 
   tasks:
    - name: run show commands
