@@ -13,6 +13,5 @@
       prompts:
        - "[>#]"
       commands:
-       - terminal length 0
-       - show version
+       - echo '1'
      register: output
