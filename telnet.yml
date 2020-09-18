@@ -2,7 +2,7 @@
 - name: Validate Telnet accessibility
   gather_facts: false
   connection: local
-  hosts: "{{ hostname }}"
+  hosts: all
 
   tasks:
    - name: run show commands
