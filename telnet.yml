@@ -7,11 +7,10 @@
   tasks:
    - name: run show commands
      telnet:
-      user: "{{ username }}"
-      password: "{{ password }}"
-      login_prompt: "Username: "
-      prompts:
-       - "[>#]"
-      commands:
-       - echo '1'
-     register: output
+       user: "{{ username }}"
+       password: "{{ password }}"
+       login_prompt: "Username: "
+       prompts:
+         - "[>#]"
+       command:
+         - echo '1'
