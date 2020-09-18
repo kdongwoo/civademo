@@ -1,12 +1,12 @@
 ---
-- hosts: localhost
-  gather_facts: true
+- name: Validate Telnet accessibility
+  gather_facts: false
   connection: local
+  host: "{{ hostname }}"
 
   tasks:
    - name: run show commands
      telnet:
-      host: "{{ hostname }}"
       user: "{{ username }}"
       password: "{{ password }}"
       login_prompt: "Username: "
