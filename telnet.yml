@@ -15,4 +15,5 @@
       commands:
        - terminal length 0
        - show version
+       - exit
      register: output
