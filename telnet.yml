@@ -6,9 +6,9 @@
   tasks:
    - name: run show commands
      telnet:
-      host: {{hostname}}
-      user: {{username}}
-      password: {{password}}
+      host: "{{ hostname }}"
+      user: "{{ username }}"
+      password: "{{ password }}"
       login_prompt: "Username: "
       prompts:
        - "[>#]"
