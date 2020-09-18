@@ -6,14 +6,13 @@
   tasks:
    - name: run show commands
      telnet:
-      host: 13.75.172.232
-      user: don
-      password: DevAdmin123!
+      host: {{hostname}}
+      user: {{Username}}
+      password: {{password}}
       login_prompt: "Username: "
       prompts:
        - "[>#]"
       commands:
        - terminal length 0
        - show version
-       - exit
      register: output
