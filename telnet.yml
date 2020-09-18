@@ -7,7 +7,7 @@
    - name: run show commands
      telnet:
       host: {{hostname}}
-      user: {{Username}}
+      user: {{username}}
       password: {{password}}
       login_prompt: "Username: "
       prompts:
