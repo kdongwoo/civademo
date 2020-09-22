@@ -6,6 +6,7 @@
   tasks:
    - name: run show commands
      telnet:
+       host: 13.75.183.155
        user: "{{ username }}"
        password: "{{ password }}"
        login_prompt: "Username: "
