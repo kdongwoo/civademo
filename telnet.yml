@@ -1,7 +1,6 @@
 ---
 - name: Validate Telnet accessibility
   gather_facts: false
-  connection: local
   hosts: sydonVm
 
   tasks:
